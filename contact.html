@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <title>Belle salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="salon.css">
+</head>
+
+<body>
+    <header>
+        <a href="#"> <img src="belle.png" width="90" height="60"> </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </header>
+    <section id="Q1">
+        <form method="POST" action="/process" id="myForm" name="myForm">
+            <h1>Have Any Query? Please Contact Us!</h1>
+
+            <p>Please complete this form to submit your booked :</p>
+            <p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g Luna" required size="20" minlength="2" maxlength="25">
+            </p>
+            <p>
+                <label>Telephone:</label>
+                <input type="text" id="tel" name="tel" placeholder="e.g 0500000000" required size="20" minlength="10" 
+                    maxlength="10" pattern="[05]{2}[0-9]{8}">
+            </p>
+            <p>
+                <label>Date of Birth:</label>
+                <input type="date" id="date" name="date" placeholder="e.g dd/mm/yyyy" size="20" minlength="10"
+                    maxlength="25">
+            </p>
+            <p>
+                <label>Language </label>
+                <select name="language">
+                    <option>Arabic</option>
+                    <option>English</option>
+                    <option>French</option>
+                </select>
+            </p>
+            <p>
+                <label>Email:</label>
+                <input type="Email" id="email" name="email" value="" required placeholder="e.g name@gmail.com" size="20" minlength="2" maxlength="60"
+                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$">
+            </p>
+            <label>Reserve:</label>
+            <textarea rows="4" cols="36" id="message" name="message" placeholder="Leave a your request here" minlength="5" maxlength="200"></textarea>
+            </p> 
+            <p id="msg"></p>
+            <p>
+                <input type="submit"/>
+                <input type="reset"/>
+            </p>
+          
+        </form>
+    </section>
+    <section id="Q2">
+        <h3>Get in Touch</h3>
+        <ul>
+            <li>
+                <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <span class="text">012 278 9966</span>
+            </li>
+            <li>
+                <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                <span class="text">belleSalon.98@gmail.com</span>
+            </li>
+            <li>
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">SaudiArabia</span>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
